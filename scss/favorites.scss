@@ -1,0 +1,232 @@
+
+@import "functions_scss/mixins.scss";
+
+$grid_response: 840px;
+
+#favorites-grid {
+    margin-bottom: 20px;
+    margin-top: -70px;
+    @media screen and (min-width: $grid_response) {
+        margin-bottom: 127px;
+    }
+
+    .container {
+        padding: 0 15px;
+        @media screen and (min-width: $grid_response) {
+            padding: 0 20px;
+        }
+    }
+}
+
+.catalogGrid {
+    margin-top: 25px;
+
+    @media screen and (min-width: $grid_response) {
+        margin-top: 40px;
+    }
+
+    &__layout {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(41vw, 256px)); 
+
+        gap: 40px 20px;
+        margin-top: 30px;
+
+        @media screen and (min-width: 550px) {
+            grid-template-columns: repeat(3, minmax(160px, 256px)); 
+        }
+
+        @media screen and (min-width: $grid_response) {
+            grid-template-columns: repeat(4, minmax(160px, 256px));
+            gap: 40px 30px;
+            margin-top: 40px;
+        }
+
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: lh(42, 32);
+        letter-spacing: 0.05em;
+        text-align: center;
+    }
+
+    &__product {
+        justify-self: center;
+    }
+
+
+
+    
+    &__loading {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: $grid_response) {
+            margin-top: 102px;
+        }
+    }
+
+    &__loadingButton {
+        margin-bottom: 40px;
+        display: block;
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #4F4F4F;
+        max-width: 360px;
+        width: 100%;
+        background-color: #fff;
+        padding: 13px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        transition: .5s all;
+        
+
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        @media screen and (min-width: $grid_response) {
+            max-width: 286px;
+            margin-bottom: 55px;
+        }
+    }
+
+    &__pages {
+        display: flex;
+        justify-content: space-between;
+        max-width: 325px;
+        width: 90%;
+    }
+
+    &__page {
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 5px;
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 16px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__page--active {
+        border: 1px solid #000;
+    }
+    
+    &__page--range {
+        
+    }
+}
+
+.product {
+
+    background: #FFFFFF;
+    border-radius: 3px;
+    transition: .3s all;
+    width: 100%;
+    font-size: 4.1vw;
+
+    @media screen and (min-width: 390px) {
+        font-size: 1rem;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+
+        .product__img {
+            .hover-img {
+                display: block;
+            }
+
+            .static-img {
+                display: none;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        
+        .static-img {
+            display: block;
+        }
+
+        .hover-img {
+            display: none;
+        }
+    }
+
+
+
+    &__title {
+       letter-spacing: 0.05em;
+    }
+
+    &__text {
+        margin: .5em 0;
+        @media screen and (min-width: $grid_response ) {
+            margin: em(13, 16) 0 em(15, 16);
+        }
+    }
+
+
+    &__price, &__discount{
+        font-size: em(15, 16);
+    }
+
+
+    &__filters {
+        margin-top: em(10, 16);
+        span {
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 em(3, 16) em(3, 16) 0;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__favorite {
+        margin: 21px auto;
+    }
+
+    &__info {
+        text-align: center;
+        @media screen and (min-width: 1024px) {    
+            padding: 0 28px 12px;
+        }
+    }
+
+    .white-button {
+
+        width: calc(100% - 16px);
+        margin: 0 auto;
+        padding: 6px;
+        display: block;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: $grid_response) {
+            width: calc(100% - 30px);
+            padding: 12px;
+
+        }
+    }
+}

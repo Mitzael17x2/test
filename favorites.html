@@ -1,0 +1,113 @@
+@@include('html/header.html', {
+    "style": '<link rel="stylesheet" href="css/favorites.min.css">'
+})
+
+<section id="favorites-grid">
+    <div class="container">
+        <div class="catalogGrid">
+            <div class="catalogGrid__title">Избранное</div>
+            <div class="catalogGrid__layout">
+                <div class="catalogGrid__product product">
+                    <div class="product__img" onclick="document.location.href='product.html'">
+                        <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                        <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                        <a href="product.html" class="product__title">Lisa Smith</a>
+                        <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                        <div class="product__price">4 500₸ </div>
+                        <div class="product__discount">9 000₸</div>
+                    </div>
+                    <button class="white-button">В корзину</button>
+                </div>
+                <div class="catalogGrid__product product">
+                    <div class="product__img" onclick="document.location.href='product.html'">
+                        <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                        <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                        <a href="product.html" class="product__title">Lisa Smith</a>
+                        <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                        <div class="product__price">4 500₸ </div>
+                        <div class="product__discount">9 000₸</div>
+                    </div>
+                    <button class="white-button">В корзину</button>
+                </div>
+                <div class="catalogGrid__product product">
+                    <div class="product__img" onclick="document.location.href='product.html'">
+                        <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                        <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                        <a href="product.html" class="product__title">Lisa Smith</a>
+                        <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                        <div class="product__price">4 500₸ </div>
+                        <div class="product__discount">9 000₸</div>
+                    </div>
+                    <button class="white-button">В корзину</button>
+                </div>
+                <div class="catalogGrid__product product">
+                    <div class="product__img" onclick="document.location.href='product.html'">
+                        <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                        <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                        <a href="product.html" class="product__title">Lisa Smith</a>
+                        <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                        <div class="product__price">4 500₸ </div>
+                        <div class="product__discount">9 000₸</div>
+                    </div>
+                    <button class="white-button">В корзину</button>
+                </div>
+                <div class="catalogGrid__product product">
+                    <div class="product__img" onclick="document.location.href='product.html'">
+                        <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                        <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                        <a href="product.html" class="product__title">Lisa Smith</a>
+                        <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                        <div class="product__price">4 500₸ </div>
+                        <div class="product__discount">9 000₸</div>
+                    </div>
+                    <button class="white-button">В корзину</button>
+                </div>
+                <div class="catalogGrid__product product">
+                    <div class="product__img" onclick="document.location.href='product.html'">
+                        <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                        <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                        <a href="product.html" class="product__title">Lisa Smith</a>
+                        <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                        <div class="product__price">4 500₸ </div>
+                        <div class="product__discount">9 000₸</div>
+                    </div>
+                    <button class="white-button">В корзину</button>
+                </div>
+            </div>
+            <div class="catalogGrid__loading">
+                <button class="catalogGrid__loadingButton">показать еще</button>
+                <div class="catalogGrid__pages">
+                    <div class="catalogGrid__page catalogGrid__page--active">1</div>
+                    <div class="catalogGrid__page">2</div>
+                    <div class="catalogGrid__page">3</div>
+                    <div class="catalogGrid__page">4</div>
+                    <div class="catalogGrid__page">5</div>
+                    <div class="catalogGrid__page catalogGrid__page--range">...</div>
+                    <div class="catalogGrid__page">111</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('html/footer.html', {
+    "script": ''
+})

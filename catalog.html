@@ -1,0 +1,642 @@
+@@include('html/header.html', {
+    "style": '<link rel="stylesheet" href="css/catalog.min.css">'
+})
+
+    <section id="catalog-menu">
+        <div class="container">
+            <div class="catalogMenu border-bottom catalogMenu__wrapper--relative">
+                <div class="catalogMenu__filters filters">
+                    <div class="filters__wrapper">
+                        <div class="filters__nav filters__disappearNavBlock">
+                            <div class="filters__close"><span></span></div>
+                            <div class="filters__reset">Сбросить</div>
+                        </div>
+                        <div class="filters__choosenFilters">
+                            <button class="filters__showProducts">показать 7 изделий</button>
+                        </div>
+                        <div class="filters__container">
+                            <div class="filters__priceBlock filters__block" id="filter-price-block">
+                                <div class="filters__nav filters__disappearNavBlock">
+                                    <div class="filters__return"><img src="@img/return-icon.svg" alt=""></div>
+                                    <div class="filters__titleBlock">Цена</div>
+                                    <div class="filters__reset">Сбросить</div>
+                                </div>
+                                <div class="filters__rangePrice range">
+                                    <div class="range__inputs">
+                                        <div class="range__input">
+                                            <input type="text" name="minPrice" value="100" min="0" id="input_minPrice">
+                                        </div>
+                                        <div class="range__input">
+                                            <input type="text" name="maxPrice" value="3500" max="550000" id="input_maxPrice">
+                                        </div>
+                                    </div>
+                                    <div class="range__slider" id="range_slider" data-currency=" ₽" data-min="0" data-max="550000">
+
+                                    </div>
+                                    <div class="range__checkboxs">
+                                        <div class="filters__checkbox" data-minsum="0" data-maxsum="5000">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="priceRangeCheckbox-from5000">
+                                            <label for="priceRangeCheckbox-from5000">
+                                                <span>до 5 000 ₽</span>
+                                            </label>
+                                            <div class="filters__quantity">5426</div>
+                                        </div>
+                                        <div class="filters__checkbox" data-minsum="5000" data-maxsum="10000">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="priceRangeCheckbox-from5000to10000">
+                                            <label for="priceRangeCheckbox-from5000to10000">
+                                                <span>от 5 000 ₽ до 10 000 ₽
+                                            </label>
+                                            <div class="filters__quantity">1865</div>
+                                        </div>
+                                        <div class="filters__checkbox" data-minsum="10000" data-maxsum="20000">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="priceRangeCheckbox-from10000to20000">
+                                            <label for="priceRangeCheckbox-from10000to20000">
+                                                <span>от 10 000 ₽ до 20 000 ₽</span>
+                                            </label>
+                                            <div class="filters__quantity">1452</div>
+                                        </div>
+                                        <div class="filters__checkbox" data-minsum="20000" data-maxsum="550000">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="priceRangeCheckbox-from20000">
+                                            <label for="priceRangeCheckbox-from20000">
+                                                <span>от 20 000 ₽</span>
+                                            </label>
+                                            <div class="filters__quantity">1102</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filters__discountsBlock filters__block" id="filter-discount-block">
+                                <div class="filters__nav filters__disappearNavBlock">
+                                    <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                    <div class="filters__titleBlock">Скидка</div>
+                                    <div class="filters__reset">Сбросить</div>
+                                </div>
+                                <div class="filters__discounts">
+                                    <div class="filters__discount filters__radio active">
+                                        <input type="radio" class="filters__inputRadio" name="radio_discount" id="allDiscount">
+                                        <label for="allDiscount">
+                                            <span>Все скидки</span>
+                                        </label>
+                                        <div class="filters__quantity">1865</div>
+                                    </div>
+                                    <div class="filters__discount filters__radio">
+                                        <input type="radio" class="filters__inputRadio" checked name="radio_discount" id="discount10">
+                                        <label for="discount10">
+                                            <span>От 10%</span>
+                                        </label>
+                                        <div class="filters__quantity">1865</div>
+                                    </div>
+                                    <div class="filters__discount filters__radio">
+                                        <input type="radio" class="filters__inputRadio" name="radio_discount" id="discount20">
+                                        <label for="discount20">
+                                            <span>От 20%</span>
+                                        </label>
+                                        <div class="filters__quantity">1865</div>
+                                    </div>
+                                    <div class="filters__discount filters__radio">
+                                        <input type="radio" class="filters__inputRadio" name="radio_discount" id="discount30">
+                                        <label for="discount30">
+                                            <span>От 30%</span>
+                                        </label>
+                                        <div class="filters__quantity">1865</div>
+                                    </div>
+                                    <div class="filters__discount filters__radio">
+                                        <input type="radio" class="filters__inputRadio" name="radio_discount" id="discount50">
+                                        <label for="discount50">
+                                            <span>От 50%</span>
+                                        </label>
+                                        <div class="filters__quantity">1865</div>
+                                    </div>
+                                    <div class="filters__discount filters__radio">
+                                        <input type="radio" class="filters__inputRadio" name="radio_discount" id="discount60">
+                                        <label for="discount60">
+                                            <span>От 60%</span>
+                                        </label>
+                                        <div class="filters__quantity">1865</div>
+                                    </div>
+                                    <div class="filters__discount filters__radio">
+                                        <input type="radio" class="filters__inputRadio" name="radio_discount" id="discount70">
+                                        <label for="discount70">
+                                            <span>От 70%</span>
+                                        </label>
+                                        <div class="filters__quantity">1865</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filters__parameters">
+                            <div class="filters__blockContainers">
+                                <div class="filters__block filters__block--show" id="filter-products-block">
+
+                                    <div class="filters__nav">
+                                        <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                        <div class="filters__titleBlock">Изделие</div>
+                                        <div class="filters__reset">Сбросить</div>
+                                    </div>
+                                    <div class="filters__containerOfParameters">
+                                        <div class="filters__checkbox filters__checkbox--refer" data-filter-refer="filter-earings-block">
+                                            <input type="checkbox" checked class="filters__inputCheckbox" id="product-earrings">
+                                            <label for="product-earrings"><span>Серьги</span></label>
+                                            <div class="filters__quantity">5423</div>
+                                        </div>
+                                        <div class="filters__block" id="filter-earings-block">
+                                            <div class="filters__nav filters__disappearNavBlock">
+                                                <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                                <div class="filters__titleBlock">Серьги</div>
+                                                <div class="filters__reset">Сбросить</div>
+                                            </div>
+                                            <div class="filters__containerOfParameters">
+                                                <div class="filters__checkbox">
+                                                    <input type="checkbox" class="filters__inputCheckbox" id="earings-kaffe">
+                                                    <label for="earings-kaffe"><span>Каффы</span></label>
+                                                    <div class="filters__quantity">14</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filters__checkbox filters__checkbox--refer" data-filter-refer="filter-ring-block">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="product-rings">
+                                            <label for="product-rings"><span>Кольца</span></label>
+                                            <div class="filters__quantity">523</div>
+                                        </div>
+                                        <div class="filters__block" id="filter-ring-block">
+                                            <div class="filters__nav filters__disappearNavBlock">
+                                                <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                                <div class="filters__titleBlock">Кольца</div>
+                                                <div class="filters__reset">Сбросить</div>
+                                            </div>
+                                            <div class="filters__containerOfParameters">
+                                                <div class="filters__checkbox">
+                                                    <input type="checkbox" checked class="filters__inputCheckbox" id="ring-pechatki">
+                                                    <label for="ring-pechatki"><span>Печатки</span></label>
+                                                    <div class="filters__quantity">14</div>
+                                                </div>
+                                                <div class="filters__checkbox">
+                                                    <input type="checkbox" checked class="filters__inputCheckbox" id="ring-setOfRings">
+                                                    <label for="ring-setOfRings"><span>Наборы колец</span></label>
+                                                    <div class="filters__quantity">3</div>
+                                                </div>
+                                                <div class="filters__checkbox">
+                                                    <input type="checkbox" class="filters__inputCheckbox" id="ring-falang">
+                                                    <label for="ring-falang"><span>Фаланговые</span></label>
+                                                    <div class="filters__quantity">5</div>
+                                                </div>
+                                                <div class="filters__checkbox">
+                                                    <input type="checkbox" class="filters__inputCheckbox" id="ring-marriage">
+                                                    <label for="ring-marriage"><span>Обручальный кольца</span></label>
+                                                    <div class="filters__quantity">51</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="filters__block" id="filter-material-block">
+                                    <div class="filters__nav">
+                                        <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                        <div class="filters__titleBlock">Материал</div>
+                                        <div class="filters__reset">Сбросить</div>
+                                    </div>
+                                    <div class="filters__containerOfParameters">
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="material-gold">
+                                            <label for="material-gold"><span>Золото</span></label>
+                                            <div class="filters__quantity">523</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="material-silver">
+                                            <label for="material-silver"><span>Серебро</span></label>
+                                            <div class="filters__quantity">70</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="material-jewelry_alloy">
+                                            <label for="material-jewelry_alloy"><span>Ювелирный сплав</span></label>
+                                            <div class="filters__quantity">138</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filters__block" id="filter-cover-block">
+                                    <div class="filters__nav">
+                                        <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                        <div class="filters__titleBlock">Покрытие</div>
+                                        <div class="filters__reset">Сбросить</div>
+                                    </div>
+                                    <div class="filters__containerOfParameters">
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="cover-gold">
+                                            <label for="cover-gold"><span>Золото</span></label>
+                                            <div class="filters__quantity">523</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="cover-white-gold">
+                                            <label for="cover-white-gold"><span>Белое золото</span></label>
+                                            <div class="filters__quantity">70</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="cover-pink-gold">
+                                            <label for="cover-pink-gold"><span>Розовое золото</span></label>
+                                            <div class="filters__quantity">138</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filters__block" id="filter-inserts-block">
+                                    <div class="filters__nav">
+                                        <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                        <div class="filters__titleBlock">Вставки</div>
+                                        <div class="filters__reset">Сбросить</div>
+                                    </div>
+                                    <div class="filters__containerOfParameters">
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="inserts-pink_saph">
+                                            <label for="inserts-pink_saph"><span>Розовый сапфир</span></label>
+                                            <div class="filters__quantity">5</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="inserts-geolit">
+                                            <label for="inserts-geolit"><span>Гелиолит</span></label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="inserts-morion">
+                                            <label for="inserts-morion"><span>Морион</span></label>
+                                            <div class="filters__quantity">18</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filters__block" id="filter-size-block">
+                                    <div class="filters__nav">
+                                        <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                        <div class="filters__titleBlock">Размер кольца</div>
+                                        <div class="filters__reset">Сбросить</div>
+                                    </div>
+                                    <div class="filters__containerOfParameters">
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="size-13">
+                                            <label for="size-13"><span>13</span></label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="size-13.5">
+                                            <label for="size-13.5"><span>13.5</span></label>
+                                            <div class="filters__quantity">18</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="size-14">
+                                            <label for="size-14"><span>14</span></label>
+                                            <div class="filters__quantity">2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filters__block" id="filter-colors-block">
+                                    <div class="filters__nav">
+                                        <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                        <div class="filters__titleBlock">Цвет</div>
+                                        <div class="filters__reset">Сбросить</div>
+                                    </div>
+                                    <div class="filters__containerOfParameters">
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="color-yellow">
+                                            <label for="color-yellow" class="flex-label">
+                                                <div class="filters__colorImg"></div>
+                                                <span>Желтый</span>
+                                            </label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="color-grey">
+                                            <label for="color-grey" class="flex-label">
+                                                <div class="filters__colorImg"></div>
+                                                <span>Серый</span>
+                                            </label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="color-gold">
+                                            <label for="color-gold" class="flex-label">
+                                                <div class="filters__colorImg"><img src="@img/gold-color.png"></div>
+                                                <span>Золотистый</span>
+                                            </label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="color-vinous">
+                                            <label for="color-vinous" class="flex-label">
+                                                <div class="filters__colorImg"></div>
+                                                <span>Бордовый</span>
+                                            </label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="color-silver">
+                                            <label for="color-silver" class="flex-label">
+                                                <div class="filters__colorImg"><img src="@img/silver-color.png"></div>
+                                                <span>Серебристый</span>
+                                            </label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="color-blue">
+                                            <label for="color-blue" class="flex-label">
+                                                <div class="filters__colorImg"></div>
+                                                <span>Голубой</span>
+                                            </label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="color-black">
+                                            <label for="color-black" class="flex-label">
+                                                <div class="filters__colorImg"></div>
+                                                <span>Черный</span>
+                                            </label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                        <div class="filters__checkbox">
+                                            <input type="checkbox" class="filters__inputCheckbox" id="color-multi">
+                                            <label for="color-multi" class="flex-label">
+                                                <div class="filters__colorImg"><img src="@img/multi-color.png"></div>
+                                                <span>Мульти</span>
+                                            </label>
+                                            <div class="filters__quantity">720</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filters__block" id="filter-designers-block">
+                                    <div class="filters__nav">
+                                        <div class="filters__return"><img src="@img/return-icon.svg"></div>
+                                        <div class="filters__titleBlock">Дизайнеры</div>
+                                        <div class="filters__reset">Сбросить</div>
+                                    </div>
+                                    <div class="filters__containerOfParameters">
+                                        <div class="filters__listOfCheckboxs">
+                                            <div class="filters__nameOfListCheckboxs">1</div>
+                                            <div class="filters__checkbox">
+                                                <input type="checkbox" class="filters__inputCheckbox" id="designer-1">
+                                                <label for="designer-1"><span>11 Jewellery</span></label>
+                                                <div class="filters__quantity">83</div>
+                                            </div>
+                                        </div>
+                                        <div class="filters__listOfCheckboxs">
+                                            <div class="filters__nameOfListCheckboxs">3</div>
+                                            <div class="filters__checkbox filters__absence">
+                                                <input type="checkbox" class="filters__inputCheckbox" id="designer-2">
+                                                <label for="designer-2"><span>35.02</span></label>
+                                                <div class="filters__quantity">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="filters__listOfCheckboxs">
+                                            <div class="filters__nameOfListCheckboxs">A</div>
+                                            <div class="filters__checkbox">
+                                                <input type="checkbox" class="filters__inputCheckbox" id="designer-3">
+                                                <label for="designer-3"><span>ACCHITTO</span></label>
+                                                <div class="filters__quantity">10</div>
+                                            </div>
+                                        </div>
+                                        <div class="filters__listOfCheckboxs">
+                                            <div class="filters__nameOfListCheckboxs">B</div>
+                                            <div class="filters__checkbox">
+                                                <input type="checkbox" class="filters__inputCheckbox" id="designer-4">
+                                                <label for="designer-4"><span>Ben Amun</span></label>
+                                                <div class="filters__quantity">26</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="filters__list">
+                                <div class="filters__item filters__disapp" data-filter-refer="filter-price-block">цена</div>
+                                <div class="filters__item filters__disapp" data-filter-refer="filter-discount-block">скидка</div>
+                                <div class="filters__item filters__disapp" data-filter-refer="filter-products-block">изделие</div>
+                                <div class="filters__item" data-filter-refer="filter-material-block">материал</div>
+                                <div class="filters__item" data-filter-refer="filter-cover-block">покрытие</div>
+                                <div class="filters__item" data-filter-refer="filter-inserts-block">вставки</div>
+                                <div class="filters__item" data-filter-refer="filter-size-block">размер кольца</div>
+                                <div class="filters__item" data-filter-refer="filter-colors-block">цвет</div>
+                                <div class="filters__item" data-filter-refer="filter-designers-block">дизайнеры</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogMenu__wrapper">
+                    <button class="catalogMenu__filter light-button light-hover">
+                        <span>
+                            <svg class="button-icon"><use href="@img/icons/icons.svg#filter-icon"></use></svg>
+                        </span>
+                        фильтр
+                    </button>
+                    <div class="catalogMenu__quantityGoods">255 товаров</div>
+                </div>
+                <div class="catalogMenu__wrapper">
+                    <button class="catalogMenu__sort light-button light-hover close-icon">
+                        <span><svg class="button-icon"><use href="@img/icons/icons.svg#sort-icon"></svg></span>
+                        новинки
+                    </button>
+                    <ul class="catalogMenu__sortList sortList">
+                        <div class="sortList__body">
+                            <li class="sortList__message">сначала</li>
+                            <li class="sortList__item active">новинки</li>
+                            <li class="sortList__item">рекомендованные</li>
+                            <li class="sortList__item">дешевле</li>
+                            <li class="sortList__item">дороже</li>
+                            <li class="sortList__item">скидки</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="catalog-grid">
+        <div class="container">
+            <div class="catalogGrid">
+                <div class="catalogGrid__layout">
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                            <div class="product__filters">
+                                <span style="background-color: grey;"></span>
+                                <span style="background-color: black;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                            <div class="product__filters">
+                                <span style="background-color: grey;"></span>
+                                <span style="background-color: black;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                            <div class="product__filters">
+                                <span style="background-color: grey;"></span>
+                                <span style="background-color: black;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite active"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                            <div class="product__filters">
+                                <span style="background-color: grey;"></span>
+                                <span style="background-color: black;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                        </div>
+                    </div>
+                    <div class="catalogGrid__product product">
+                        <div class="product__img" onclick="document.location.href='product.html'">
+                            <img class="static-img" src="@img/interactiveGallery__itemImg--1.png">
+                            <img class="hover-img" src="@img/catalog-product-1.png" alt="necklace">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__favorite"><svg><use href="@img/icons/icons.svg#favoriteProduct-icon"></use></svg></div>
+                            <a href="product.html" class="product__title">Lisa Smith</a>
+                            <div class="product__text"><a href="product.html">Кольцо-дорожка из серебра с каплей зелёного аметиста</a></div>
+                            <div class="product__price">4 500₸ </div>
+                            <div class="product__discount">9 000₸</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogGrid__loading">
+                    <button class="catalogGrid__loadingButton">показать еще</button>
+                    <div class="catalogGrid__pages">
+                        <div class="catalogGrid__page catalogGrid__page--active">1</div>
+                        <div class="catalogGrid__page">2</div>
+                        <div class="catalogGrid__page">3</div>
+                        <div class="catalogGrid__page">4</div>
+                        <div class="catalogGrid__page">5</div>
+                        <div class="catalogGrid__page catalogGrid__page--range">...</div>
+                        <div class="catalogGrid__page">111</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+@@include('html/footer.html', {
+    "script": '<script src="js/catalog.min.js"></script>'
+})

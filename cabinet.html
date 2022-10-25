@@ -1,0 +1,267 @@
+@@include('html/header.html', {
+    "style": '<link rel="stylesheet" href="css/cabinet.min.css">'
+})
+
+    <section id="cabinet">
+        <div class="container">
+            <div class="cabinet">
+                <div class="cabinet__nav">
+                    <div class="MiTab-narrow active" data-tab="data">личные данные</div>
+                    <div class="MiTab-narrow" data-tab="orders">мои заказы</div>
+                </div>
+                <div class="cabinet__content">
+                    <div class="cabinet__tab MiTab-item active" data-tabbody="data">
+                        <form action="#" class="cabinet__form" id="about_you_form">
+                            <div class="cabinet__title">Личные данные</div>
+                            <div class="cabinet__block">
+                                <div class="cabinet__subtitle">О вас</div>
+                                <input type="text" placeholder="Имя можно с фамилией" class="input-field">
+                                <input type="text" placeholder="Дата рождения" class="input-field">
+                            </div>
+                            <div class="cabinet__block">
+                                <div class="cabinet__subtitle">Вход на сайт</div>
+                                <input type="text" placeholder="Телефон" class="input-field tel">
+                                <input type="email" name="email" placeholder="Email" class="input-field">
+                            </div>
+                            <button class="white-button" type="submit">Сохранить данные</button>
+                        </form>
+                        <form action="#" class="cabinet__form">
+                            <div class="cabinet__title">Адрес доставки</div>
+                            <div class="cabinet__block">
+                                <textarea class="input-field textarea-field" placeholder="Адрес"></textarea>
+                                <input type="text" placeholder="Квартира, офис" class="input-field">
+                                <input type="text" placeholder="Подъезд" class="input-field">
+                                <input type="text" placeholder="Этаж" class="input-field">
+                                <input type="text" placeholder="Домофон" class="input-field">
+                            </div>
+                            <button class="white-button" type="submit">Сохранить адрес</button>
+                        </form>
+                    </div>
+                    <div class="cabinet__tab no-paddings MiTab-item" data-tabbody="orders">
+                        <div class="cabinet__title cabinet__onlyMobile">Мои заказы</div>
+                        <div class="cabinet__purchaseText">Здесь вы можете отследить заказ и просмотреть историю покупок.</div>
+                        <div class="purchase">
+                            <div class="purchase__shortInfo">
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Дата заказа</div>
+                                    <div class="purchase__text purchase__text--infoBlock">09-03-2022</div>
+                                </div>
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Номер заказа</div>
+                                    <div class="purchase__text purchase__text--infoBlock">KDJKWK343D</div>
+                                </div>
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Статус</div>
+                                    <div class="purchase__text purchase__text--infoBlock">Заказ формируется</div>
+                                </div>
+                                <div class="purchase__icon"><span></span></div>
+                            </div>
+                            <div class="purchase__wrapper">
+                                <div class="purchase__info">
+                                    <div class="purchase__status purchase__border--bottom">
+                                        <div class="purchase__iconStatus"><img src="@img/success-order-icon.svg"></div>
+                                        <div class="purchase__title">Заказ выполнен</div>
+                                    </div>
+                                    <div class="purchase__item purchase__border--bottom">
+                                        <div class="purchase__img"><img src="@img/good__image--3.webp"></div>
+                                        <div class="purchase__text purchase__text--item">Кольцо-дорожка из серебра с каплей зелёного аметиста</div>
+                                        <div class="purchase__quantity purchase__text">Количество 3</div>
+                                        <div class="purchase__price">3 000 000 ₸</div>
+                                        <div class="purchase__rest">
+                                            <div class="purchase__restIcon"><img src="@img/purchase-info-icon.svg"></div>
+                                            <div class="purchase__restInfo">
+                                                <div class="purchase__text">Не подлежит возврату</div>
+                                                <div class="purchase__refer"><a href="#" class="underline">Узнать больше</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="purchase__item purchase__border--bottom">
+                                        <div class="purchase__img"><img src="@img/good__image--3.webp"></div>
+                                        <div class="purchase__text purchase__text--item">Кольцо-дорожка из серебра с каплей зелёного аметиста</div>
+                                        <div class="purchase__quantity purchase__text">Количество 3</div>
+                                        <div class="purchase__price">3 000 000 ₸</div>
+                                        <div class="purchase__rest">
+                                            <div class="purchase__restIcon"><img src="@img/purchase-info-icon.svg"></div>
+                                            <div class="purchase__restInfo">
+                                                <div class="purchase__text">Не подлежит возврату</div>
+                                                <div class="purchase__refer"><a href="#" class="underline">Узнать больше</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="purchase">
+                            <div class="purchase__shortInfo">
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Дата заказа</div>
+                                    <div class="purchase__text purchase__text--infoBlock">09-03-2022</div>
+                                </div>
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Номер заказа</div>
+                                    <div class="purchase__text purchase__text--infoBlock">KDJKWK343D</div>
+                                </div>
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Статус</div>
+                                    <div class="purchase__text purchase__text--infoBlock">Заказ отправлен</div>
+                                </div>
+                                <div class="purchase__icon"><span></span></div>
+                            </div>
+                            <div class="purchase__wrapper">
+                                <div class="purchase__info">
+                                    <div class="purchase__status purchase__border--bottom">
+                                        <div class="purchase__iconStatus"><img src="@img/success-order-icon.svg"></div>
+                                        <div class="purchase__title">Заказ выполнен</div>
+                                    </div>
+                                    <div class="purchase__item purchase__border--bottom">
+                                        <div class="purchase__img"><img src="@img/good__image--3.webp"></div>
+                                        <div class="purchase__text purchase__text--item">Кольцо-дорожка из серебра с каплей зелёного аметиста</div>
+                                        <div class="purchase__quantity purchase__text">Количество 3</div>
+                                        <div class="purchase__price">3 000 000 ₸</div>
+                                        <div class="purchase__rest">
+                                            <div class="purchase__restIcon"><img src="@img/purchase-info-icon.svg"></div>
+                                            <div class="purchase__restInfo">
+                                                <div class="purchase__text">Не подлежит возврату</div>
+                                                <div class="purchase__refer"><a href="#" class="underline">Узнать больше</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="purchase__item purchase__border--bottom">
+                                        <div class="purchase__img"><img src="@img/good__image--3.webp"></div>
+                                        <div class="purchase__text purchase__text--item">Кольцо-дорожка из серебра с каплей зелёного аметиста</div>
+                                        <div class="purchase__quantity purchase__text">Количество 3</div>
+                                        <div class="purchase__price">3 000 000 ₸</div>
+                                        <div class="purchase__rest">
+                                            <div class="purchase__restIcon"><img src="@img/purchase-info-icon.svg"></div>
+                                            <div class="purchase__restInfo">
+                                                <div class="purchase__text">Не подлежит возврату</div>
+                                                <div class="purchase__refer"><a href="#" class="underline">Узнать больше</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="purchase">
+                            <div class="purchase__shortInfo">
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Дата заказа</div>
+                                    <div class="purchase__text purchase__text--infoBlock">09-03-2022</div>
+                                </div>
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Номер заказа</div>
+                                    <div class="purchase__text purchase__text--infoBlock">KDJKWK343D</div>
+                                </div>
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Статус</div>
+                                    <div class="purchase__text purchase__text--infoBlock">Доставлен</div>
+                                </div>
+                                <div class="purchase__icon"><span></span></div>
+                            </div>
+                            <div class="purchase__wrapper">
+                                <div class="purchase__info">
+                                    <div class="purchase__status purchase__border--bottom">
+                                        <div class="purchase__iconStatus"><img src="@img/success-order-icon.svg"></div>
+                                        <div class="purchase__title">Заказ выполнен</div>
+                                    </div>
+                                    <div class="purchase__item purchase__border--bottom">
+                                        <div class="purchase__img"><img src="@img/good__image--3.webp"></div>
+                                        <div class="purchase__text purchase__text--item">Кольцо-дорожка из серебра с каплей зелёного аметиста</div>
+                                        <div class="purchase__quantity purchase__text">Количество 3</div>
+                                        <div class="purchase__price">3 000 000 ₸</div>
+                                        <div class="purchase__rest">
+                                            <div class="purchase__restIcon"><img src="@img/purchase-info-icon.svg"></div>
+                                            <div class="purchase__restInfo">
+                                                <div class="purchase__text">Не подлежит возврату</div>
+                                                <div class="purchase__refer"><a href="#" class="underline">Узнать больше</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="purchase__item purchase__border--bottom">
+                                        <div class="purchase__img"><img src="@img/good__image--3.webp"></div>
+                                        <div class="purchase__text purchase__text--item">Кольцо-дорожка из серебра с каплей зелёного аметиста</div>
+                                        <div class="purchase__quantity purchase__text">Количество 3</div>
+                                        <div class="purchase__price">3 000 000 ₸</div>
+                                        <div class="purchase__rest">
+                                            <div class="purchase__restIcon"><img src="@img/purchase-info-icon.svg"></div>
+                                            <div class="purchase__restInfo">
+                                                <div class="purchase__text">Не подлежит возврату</div>
+                                                <div class="purchase__refer"><a href="#" class="underline">Узнать больше</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="purchase">
+                            <div class="purchase__shortInfo">
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Дата заказа</div>
+                                    <div class="purchase__text purchase__text--infoBlock">09-03-2022</div>
+                                </div>
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Номер заказа</div>
+                                    <div class="purchase__text purchase__text--infoBlock">KDJKWK343D</div>
+                                </div>
+                                <div class="purchase__infoBlock">
+                                    <div class="purchase__title">Статус</div>
+                                    <div class="purchase__text purchase__text--infoBlock">Заказ отправлен</div>
+                                </div>
+                                <div class="purchase__icon"><span></span></div>
+                            </div>
+                            <div class="purchase__wrapper">
+                                <div class="purchase__info">
+                                    <div class="purchase__status purchase__border--bottom">
+                                        <div class="purchase__iconStatus"><img src="@img/success-order-icon.svg"></div>
+                                        <div class="purchase__title">Заказ выполнен</div>
+                                    </div>
+                                    <div class="purchase__item purchase__border--bottom">
+                                        <div class="purchase__img"><img src="@img/good__image--3.webp"></div>
+                                        <div class="purchase__text purchase__text--item">Кольцо-дорожка из серебра с каплей зелёного аметиста</div>
+                                        <div class="purchase__quantity purchase__text">Количество 3</div>
+                                        <div class="purchase__price">3 000 000 ₸</div>
+                                        <div class="purchase__rest">
+                                            <div class="purchase__restIcon"><img src="@img/purchase-info-icon.svg"></div>
+                                            <div class="purchase__restInfo">
+                                                <div class="purchase__text">Не подлежит возврату</div>
+                                                <div class="purchase__refer"><a href="#" class="underline">Узнать больше</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="purchase__item purchase__border--bottom">
+                                        <div class="purchase__img"><img src="@img/good__image--3.webp"></div>
+                                        <div class="purchase__text purchase__text--item">Кольцо-дорожка из серебра с каплей зелёного аметиста</div>
+                                        <div class="purchase__quantity purchase__text">Количество 3</div>
+                                        <div class="purchase__price">3 000 000 ₸</div>
+                                        <div class="purchase__rest">
+                                            <div class="purchase__restIcon"><img src="@img/purchase-info-icon.svg"></div>
+                                            <div class="purchase__restInfo">
+                                                <div class="purchase__text">Не подлежит возврату</div>
+                                                <div class="purchase__refer"><a href="#" class="underline">Узнать больше</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup" id="confirm-email-popup">
+        <div class="popup__content popup__content--registration">
+          <div class="popup__close"><span></span></div>
+          <div class="popup__body active">
+            <div class="popup__title">Введите код:</div>
+            <label for="popup_confirm_email_input">Введите код отправленный на указанный email</label>
+            <input type="text" class="input-field" name="email_code" id="popup_confirm_email_input">
+            <button type="button" id="confirm-email-button" class="dark-button">Отправить</button>
+          </div>
+        </div>
+      </div>
+
+@@include('html/footer.html', {
+    "script": '<script src="js/cabinet.min.js"></script>'
+})

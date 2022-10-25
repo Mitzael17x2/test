@@ -1,0 +1,279 @@
+@@include('html/header.html', {
+    "style": '<link rel="stylesheet" href="css/cart.min.css">'
+})
+
+    <section id="cart">
+        <div class="container">
+            <div class="cart">
+                <div class="cart__items">
+                    <div class="cart__item cartItem border-bottom">
+                        <div class="cartItem__img"><img src="@img/interactiveGallery__itemImg--1.png" alt="ring"></div>
+                        <div class="cartItem__info">
+                            <div class="cartItem__title">4C</div>
+                            <div class="cartItem__text">Кольцо из белого золота с бриллиантом</div>
+                            <div class="cartItem__parameter">Размер: 17.5</div>
+                            <div class="cartItem__warning">Остался последний экземпляр!</div>
+                        </div>
+                        <div class="cartItem__actions">
+                            <div class="cartItem__counter counter">
+                                <button class="counter-minus" type="button" onclick="this.nextElementSibling.stepDown();">-</button>
+                                <input type="number" value="1" readonly value="1" min="1" max="99">
+                                <button class="counter-plus" type="button" onclick="this.previousElementSibling.stepUp();">+</button>
+                            </div>
+                            <div class="cartItem__relocate">Перенести в избранное</div>
+                            <div class="cartItem__delete"><img src="@img/delete-icon.svg"></div>
+                        </div>
+                        <div class="cartItem__price">120 000 ₸</div>
+                    </div>
+                    <div class="cart__item cartItem outstock border-bottom">
+                        <div class="cartItem__img"><img src="@img/interactiveGallery__itemImg--1.png" alt="ring"></div>
+                        <div class="cartItem__info">
+                            <div class="cartItem__title">4C</div>
+                            <div class="cartItem__text">Кольцо из белого золота с бриллиантом</div>
+                            <div class="cartItem__parameter">Размер: 17.5</div>
+                        </div>
+                        <div class="cartItem__actions">
+                            <div class="cartItem__outstock">нет в наличие</div>
+                            <div class="cartItem__relocate">Перенести в избранное</div>
+                            <div class="cartItem__delete"><img src="@img/delete-icon.svg"></div>
+                        </div>
+                        <div class="cartItem__price">120 000 ₸</div>
+                    </div>
+                    <div class="cart__item cartItem border-bottom">
+                        <div class="cartItem__img"><img src="@img/interactiveGallery__itemImg--1.png" alt="ring"></div>
+                        <div class="cartItem__info">
+                            <div class="cartItem__title">4C</div>
+                            <div class="cartItem__text">Кольцо из белого золота с бриллиантом</div>
+                            <div class="cartItem__parameter">Размер: 17.5</div>
+                            <div class="cartItem__warning">Остался последний экземпляр!</div>
+                        </div>
+                        <div class="cartItem__actions">
+                            <div class="cartItem__counter counter">
+                                <button class="counter-minus" type="button" onclick="this.nextElementSibling.stepDown();">-</button>
+                                <input type="number" value="1" readonly value="1" min="1" max="99">
+                                <button class="counter-plus" type="button" onclick="this.previousElementSibling.stepUp();">+</button>
+                            </div>
+                            <div class="cartItem__relocate">Перенести в избранное</div>
+                            <div class="cartItem__delete"><img src="@img/delete-icon.svg"></div>
+                        </div>
+                        <div class="cartItem__price">120 000 ₸</div>
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+                <div class="options__block">
+                    <div class="checkbox" data-minsum="0" data-maxsum="5000">
+                        <input type="checkbox" class="inputCheckbox gift_checkbox" id="gift">
+                        <label for="gift">
+                            <span>Покупаю в подарок</span>
+                        </label>
+                    </div>
+                    <div class="options__text">Мы понимаем в подарках и с удовольствием позаботимся о вашем. Напишите в комментарии к заказу ваши пожелания <span class="underline">Возможные варианты</span></div>
+                    <div class="options__packingContainer">
+                        <div class="options__photo">
+                            <input type="file" id="packaging">
+                            <label for="packaging">
+                                <span>Фотография упаковки</span>
+                                <img src="#" style="display: none;">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="checkbox" class="inputRadio" id="plus700">
+                            <label for="plus700">
+                                <span>+700 ₸</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__block">
+                    <div class="options__price">Итого 240 000 ₸</div>
+                    <form class="promo" action="#">
+                        <input type="text" class="input-field" placeholder="Промокод" >
+                        <button class="options__button" type="submit"><img src="@img/Arrow5.svg"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="order">
+        <div class="container">
+            <div class="order">
+                <form action="#">
+                    <div class="order__title">Оформление заказа</div>
+                    <div class="order__block order__data">
+                        <div class="order__subtitle">
+                            Ваши данные
+                        </div>
+                        <div class="wrapper-tel-with-code" data-code="+7">
+                            <input type="text" placeholder="Номер телефона" class="input-field tel-with-code">
+                        </div>
+                        <div class="input-wrapper" data-hint="Email">
+                            <input type="text" placeholder="Email" class="input-field">
+                        </div>
+                        <div class="input-wrapper" data-hint="Имя и Фамилия">
+                            <input type="text" placeholder="ИМЯ и Фамилия" class="input-field">
+                        </div>
+                    </div>
+                    <div class="order__block order__deliver">
+                        <div class="order__subtitle">Способ доставки</div>
+                        <div class="order__deliverContent">
+                            <div class="radio radio--big">
+                                <input type="radio" checked class="inputRadio" id="deliver">
+                                <label for="deliver">
+                                    <span>Доставка</span>
+                                </label>
+                            </div>
+                            <div class="order__addressList">
+                                <input type="hidden" name="city" value="Нур-Султан">
+                                <div class="order__country">Казахстан</div>
+                                <div class="order__cities">
+                                    <div class="order__selectedCity">
+                                        <span>Нур-Султан</span>
+                                        <svg><use href="@img/icons/icons.svg#spoiler_cart-black"></use></svg>
+                                    </div>
+                                    <ul class="order__listCities">
+                                        <li class="order__city active">
+                                            <input type="radio" checked name="city" id="Nur-Sultan_order">
+                                            <label for="Nur-Sultan_order">Нур-Султан</label>
+                                        </li>
+                                        <li class="order__city">
+                                            <input type="radio" name="city" id="Almaty_order">
+                                            <label for="Almaty_order">Алматы</label>
+                                        </li>
+                                        <li class="order__city">
+                                            <input type="radio" name="city" id="Shymkent_order">
+                                            <label for="Shymkent_order">Шымкент</label>
+                                        </li>
+                                        <li class="order__city">
+                                            <input type="radio" name="city" id="Aktobe_order">
+                                            <label for="Aktobe_order">Актобе</label>
+                                        </li>
+                                        <li class="order__city">
+                                            <input type="radio" name="city" id="Karaganda_order">
+                                            <label for="Karaganda_order">Караганда</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="order__nav">
+                                <input type="radio" id="courier" checked  name="typeOfDeliver">
+                                <label class="MiTab-narrow order__button active" data-tab="courier" for="courier">Курьерская доставка</label>
+                                <!-- <input type="radio" id="post"  name="typeOfDeliver">
+                                <label class="MiTab-narrow order__button" data-tab="post" for="post">Постамат</label> -->
+                            </div>
+                            <div class="order__tabBody">
+                                <div class="MiTab-item active courierDeliver" data-tabbody="courier">
+                                    <div class="courierDeliver__anotherGetter courierDeliver__spoiler">
+                                        <div class="courierDeliver__text">
+                                            Другой получатель
+                                            <svg><use href="@img/icons/icons.svg#spoiler_cart-blue"></use></svg>
+                                        </div>
+                                        <div class="courierDeliver__list">
+                                            <div class="wrapper-tel-with-code" data-code="+7">
+                                                <input type="text" placeholder="Номер телефона" class="input-field tel-with-code">
+                                            </div>
+                                            <div class="input-wrapper" data-hint="Имя и фамилия">
+                                                <input type="text" placeholder="ИМЯ и ФАМЛИЛИЯ" class="input-field">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-wrapper" data-hint="Адрес">
+                                        <input type="text" placeholder="Адрес" class="input-field">
+                                    </div>
+                                    <div class="input-wrapper" data-hint="Квартира, офис">
+                                        <input type="text" placeholder="Квартира, офис" class="input-field">
+                                    </div>
+                                    <div class="input-wrapper" data-hint="Подъезд">
+                                        <input type="text" placeholder="Подъезд" class="input-field">
+                                    </div>
+                                    <div class="courierDeliver__additionalAddress courierDeliver__spoiler">
+                                        <div class="courierDeliver__text">
+                                            Добавить этаж, домофон, комментарий
+                                            <svg><use href="@img/icons/icons.svg#spoiler_cart-blue"></use></svg>
+                                        </div>
+                                        <div class="courierDeliver__list">
+                                            <div class="courierDeliver__containerInputs">
+                                                <div class="input-wrapper" data-hint="Этаж">
+                                                    <input type="text" placeholder="Этаж" class="input-field">
+                                                </div>
+                                                <div class="input-wrapper" data-hint="Домофон">
+                                                    <input type="text" placeholder="Домофон" class="input-field">
+                                                </div>
+                                            </div>
+                                            <textarea class="input-field textarea-field" placeholder="Комментарий"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="MiTab-item post" data-tabbody="post">
+                                    <div class="order__warning">
+                                        <div class="order__warnignIcon">
+                                            <img src="@img/order-warning-icon.svg">
+                                        </div>
+                                        Время обработки и доставки заказа может быть увеличено
+                                    </div>
+                                    <button class="order__choicePost dark-button order__button" type="button">Выбрать постамат</button>
+                                    <div class="order__details details">
+                                        <div class="details__title">Детали доставки</div>
+                                        <ul class="details__info">
+                                            <li class="details__item">
+                                                Вы можете оформить возврат
+                                                <a href="#" class="details__refer underline">Условия обмена и возврата</a>
+                                            </li>
+                                            <li class="details__item">При оплате онлайн</li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__block order__communication">
+                        <div class="order__subtitle">Способ связи</div>
+                        <div class="radio radio--big radio-grey">
+                            <input type="radio" name="communication" checked class="inputRadio" id="communication_tel">
+                            <label for="communication_tel">
+                                <span>Звонок по телефону</span>
+                            </label>
+                        </div>
+                        <div class="radio radio--big radio-grey">
+                            <input type="radio" name="communication" checked class="inputRadio" id="communication_whatsapp">
+                            <label for="communication_whatsapp">
+                                <span>Сообщение в WhatsApp</span>
+                            </label>
+                        </div>
+                        <div class="radio radio--big radio-grey">
+                            <input type="radio" name="communication" checked class="inputRadio" id="communication_sms">
+                            <label for="communication_sms">
+                                <span>СМС о статусе заказа</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="order__block order__payment">
+                        <div class="order__subtitle">Способ оплаты</div>
+                        <div class="radio radio--big radio-grey">
+                            <input type="radio" name="payment" checked class="inputRadio" id="payment_online">
+                            <label for="payment_online">
+                                <span>Онлайн картой</span>
+                                <span class="signature">(Visa, MasterCard, Maestro или МИР)</span>
+                            </label>
+                        </div>
+                        <div class="radio radio--big blocked radio-grey">
+                            <input type="radio" name="payment" class="inputRadio" id="payment_life">
+                            <label for="payment_life">
+                                <span>При получении наличными или картой</span>
+                                <span class="signature">(недоступно для выбранного способа доставки)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="order__submitButton dark-button" type="submit">Оплатить</button>
+                    <div class="order__rules">
+                        Оформляя заказ, я принимаю <a href="#" class="underline">условия конфиденциальности персональной информации</a> в том числе в части обработки и использования моих персональных данных
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </section>
+
+
+@@include('html/footer.html', {
+    "script": '<script src="js/cart.min.js"></script>'
+})

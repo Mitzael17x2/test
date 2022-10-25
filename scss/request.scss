@@ -1,0 +1,96 @@
+@import "functions_scss/mixins.scss";
+
+#request-form {
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 700px) {
+        margin-bottom: 52px;
+        margin-top: -23px;
+
+    }
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        letter-spacing: initial;
+        @media screen and (min-width: 600px) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    form {
+        margin-top: 35px;
+        max-width: 600px;
+        
+
+        @media screen and (min-width: 390px) {
+            padding: 0 25px 0 25px;
+        }
+
+        @media screen and (min-width: 700px) {
+            padding: 0;
+            margin-top: 55px;
+        }
+
+
+    }
+
+    .input-label {
+        margin-top: 15px;
+
+        @media screen and (min-width: 700px) {
+            margin-top: 28px;
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+
+    .input-field {
+        margin-top: 10px;
+    }
+
+    .file-label {
+        margin: 17px 0 24px;
+        @media screen and (min-width: 700px) {
+            margin: 33px 0 0;             
+        }
+    }
+
+    .textarea-field {
+        margin-top: 27px;
+        @media screen and (min-width : 600px) {
+            margin-top: 12px;
+            
+        }
+    }
+
+    .form-button {
+        margin-top: 25px;
+        @media screen and (min-width: 700px) {
+            margin-top: 16px;
+        }
+    }
+
+    .margin-custom-1 {
+        @media screen and (min-width: 700px) {
+            margin-top: 42px;             
+        }
+    }
+
+    &__rules {
+        font-size: 17px;
+        @media screen and (min-width: 800px) {
+            font-size: 20px;
+        }
+    }
+
+}

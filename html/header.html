@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    @@style
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header__block border-bottom">
+                    <div class="header__burger"><span></span></div>
+                    <div class="header__socials">
+                        <a class="header__social" href="#">
+                            <img src="@img/inst-icon.svg" alt="instagram">
+                        </a>
+                        <a class="header__social tiktok-icon" href="#">
+                            <img src="@img/tiktok-icon.svg" alt="tiktok">
+                        </a>
+                    </div>
+                    <a href="/" class="header__logo logo"><img src="@img/logo.png" alt="THE RISE"></a>
+                    <div class="header__rest">
+                        <a href="favorites.html" class="header__referIcon">
+                            <div class="header__quantityGoods">39</div>
+                            <svg><use href="@img/icons/icons.svg#favorite-icon"></use></svg>
+                        </a>
+                        <a href="cabinet.html" data-popup="registration_popup" class="header__referIcon">
+                            <img src="@img/login-user-white.svg"><!-- Пользователь на сайте -->
+                            <!--<img src="@img/login-user.svg">--> <!-- Пользователь в лк -->
+                        </a>
+                        <a href="cart.html" class="header__referIcon">
+                            <div class="header__quantityGoods">2</div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.1049 9H5.89497C5.64887 9 5.41142 9.09075 5.22804 9.25487C5.04467 9.419 4.92826 9.64498 4.90108 9.88957L3.1233 25.8896C3.10777 26.0293 3.1219 26.1708 3.16476 26.3048C3.20763 26.4387 3.27826 26.5621 3.37206 26.6669C3.46586 26.7717 3.5807 26.8555 3.7091 26.9129C3.83749 26.9703 3.97655 27 4.11719 27H27.8827C28.0233 27 28.1624 26.9703 28.2907 26.9129C28.4191 26.8555 28.534 26.7717 28.6278 26.6669C28.7216 26.5621 28.7922 26.4387 28.8351 26.3048C28.8779 26.1708 28.8921 26.0293 28.8765 25.8896L27.0988 9.88957C27.0716 9.64498 26.9552 9.419 26.7718 9.25487C26.5884 9.09075 26.351 9 26.1049 9Z" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11 9C11 7.67392 11.5268 6.40215 12.4645 5.46447C13.4021 4.52678 14.6739 4 16 4C17.3261 4 18.5979 4.52678 19.5355 5.46447C20.4732 6.40215 21 7.67392 21 9" stroke="black" fill="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>   
+                        </a>
+                    </div>
+                </div>
+                <div class="header__block header__menu border-bottom">
+                    <div class="header__menuWrapper">
+                        <div class="header__containerButton" data-replace>
+                            <button class="header__containerButtonElement dark-button header__catalog header__referNarrow close-icon"  data-header-refer="header_catalog">
+                                <span class="header__catalogBurger button-icon"><img src="@img/catalogBurger-icon.svg"></span>
+                                каталог
+                            </button>
+                            <div data-link-to-edit="#" class="header__containerButtonElement header__place headerPlace close-icon-list" data-header-refer="header_list_place">
+                                <button class="light-button light-hover">
+                                    <span class="headerPlace__icon">
+                                        <svg class="button-icon"><use href="@img/icons/icons.svg#mapPin-icon"></use></svg>
+                                    </span>
+                                    <span class="headerPlace__selected">Нур-Султан</span>
+                                </button>
+                                <ul class="headerPlace__list header__submenu submenu" id="header_list_place">
+                                    <div class="submenu__nav">
+                                        <div class="submenu__close"><img src="@img/submenu_back.svg"></div>
+                                        <div class="submenu__title">Адрес</div>
+                                    </div>
+                                    <div class="headerPlace__wrapper">
+                                        <li class="headerPlace__item active">
+                                            <input type="radio" checked name="city" id="Nur-Sultan">
+                                            <label for="Nur-Sultan">Нур-Султан</label>
+                                        </li>
+                                        <li class="headerPlace__item">
+                                            <input type="radio" name="city" id="Almaty">
+                                            <label for="Almaty">Алматы</label>
+                                        </li>
+                                        <li class="headerPlace__item">
+                                            <input type="radio" name="city" id="Shymkent">
+                                            <label for="Shymkent">Шымкент</label>
+                                        </li>
+                                        <li class="headerPlace__item">
+                                            <input type="radio" name="city" id="Aktobe">
+                                            <label for="Aktobe">Актобе</label>
+                                        </li>
+                                        <li class="headerPlace__item">
+                                            <input type="radio" name="city" id="Karaganda">
+                                            <label for="Karaganda">Караганда</label>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="header__headerCatalogMenu headerCatalogMenu submenu" id="header_catalog">
+                                <div class="submenu__nav">
+                                    <div class="submenu__close"><img src="@img/submenu_back.svg"></div>
+                                    <div class="submenu__title">Каталог</div>
+                                </div>
+                                <div class="headerCatalogMenu__content">
+                                    <div class="headerCatalogMenu__refers">
+                                        <div class="headerCatalogMenu__list headerCatalogMenu__list--hasChild">
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title header__referNarrow">колье</a>
+                                            <ul class="headerCatalogMenu__items">
+                                                <a class="headerCatalogMenu__item headerCatalogMenu__onlyMoblieRefer" href="catalog.html">Все колье</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">колье-цепи</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">чокеры</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">кулоны и медальоны</a>
+                                            </ul>
+                                        </div>
+                                        <div class="headerCatalogMenu__list headerCatalogMenu__list--hasChild">
+                                            <a data-img="@img/interactiveGallery__itemImg--2.png" href="catalog.html" class="headerCatalogMenu__title header__referNarrow">серьги</a>
+                                            <ul class="headerCatalogMenu__items">
+                                                <a class="headerCatalogMenu__item headerCatalogMenu__onlyMoblieRefer" href="catalog.html">Все серьги</a>
+                                                <a data-img="@img/interactiveGallery__itemImg--2.png" href="catalog.html" class="headerCatalogMenu__item">каффы</a>
+                                                <a data-img="@img/interactiveGallery__itemImg--2.png" href="catalog.html" class="headerCatalogMenu__item">серьги-кольца</a>
+                                                <a data-img="@img/interactiveGallery__itemImg--2.png" href="catalog.html" class="headerCatalogMenu__item">пусеты</a>
+                                                <a data-img="@img/interactiveGallery__itemImg--2.png" href="catalog.html" class="headerCatalogMenu__item">моносерьги</a>
+                                                <a data-img="@img/interactiveGallery__itemImg--2.png" href="catalog.html" class="headerCatalogMenu__item">клипсы</a>
+                                            </ul>
+                                        </div>
+                                        <div class="headerCatalogMenu__list headerCatalogMenu__list--hasChild">
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title header__referNarrow">браслеты</a>
+                                            <ul class="headerCatalogMenu__items">
+                                                <a class="headerCatalogMenu__item headerCatalogMenu__onlyMoblieRefer" href="catalog.html">Все браслеты</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">кожаные браслеты</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">браслеты из натуральных камней</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">тонкие браслеты</a>
+                                            </ul>
+                                        </div>
+                                        <div class="headerCatalogMenu__list headerCatalogMenu__list--hasChild">
+                                            <a data-img="@img/interactiveGallery__itemImg--1.png" href="catalog.html" class="headerCatalogMenu__title header__referNarrow">кольца</a>
+                                            <ul class="headerCatalogMenu__items">
+                                                <a class="headerCatalogMenu__item headerCatalogMenu__onlyMoblieRefer" href="catalog.html">Все кольца</a>
+                                                <a data-img="@img/interactiveGallery__itemImg--1.png" href="catalog.html" class="headerCatalogMenu__item">печатки</a>
+                                                <a data-img="@img/interactiveGallery__itemImg--1.png" href="catalog.html" class="headerCatalogMenu__item">наборы колец</a>
+                                                <a data-img="@img/interactiveGallery__itemImg--1.png" href="catalog.html" class="headerCatalogMenu__item">обручальные кольца</a>
+                                            </ul>
+                                        </div>
+                                        <div class="headerCatalogMenu__list">
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title">аксессуары</a>
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title">пирсинг</a>
+                                        </div>
+                                        <div class="headerCatalogMenu__list">
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title">золото</a>
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title">серебро</a>
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title">бижутерия</a>
+                                        </div>
+                                        <div class="headerCatalogMenu__list headerCatalogMenu__list--hasChild">
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title header__referNarrow">тренды</a>
+                                            <ul class="headerCatalogMenu__items">
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">цепи</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">каффы и клаймберы</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">кристаллы</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">просто концептуально</a>
+                                                <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__item">многослойность</a>
+                                            </ul>
+                                        </div>
+                                        <div class="headerCatalogMenu__list">
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title">Объекты</a>
+                                        </div>
+                                        <div class="headerCatalogMenu__list">
+                                            <a data-img="@img/serebro@1x 1.png" href="catalog.html" class="headerCatalogMenu__title">экслюзив</a>
+                                        </div>
+                                    </div>
+                                    <div class="headerCatalogMenu__images">
+                                        <div class="headerCatalogMenu__img active">
+                                            <img src="@img/serebro@1x 1.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__containerButton">
+                            <button class="header__containerButtonElement light-button light-hover header__delivery" onclick="document.location.href='delivery.html'">
+                                <svg class="button-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 7.5H11V5H13.6615C13.7614 5 13.8591 5.02994 13.9418 5.08597C14.0245 5.14199 14.0886 5.22152 14.1257 5.3143L15 7.5Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 9H11"  stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.75 13.5C12.5784 13.5 13.25 12.8284 13.25 12C13.25 11.1716 12.5784 10.5 11.75 10.5C10.9216 10.5 10.25 11.1716 10.25 12C10.25 12.8284 10.9216 13.5 11.75 13.5Z"  stroke-miterlimit="10"/>
+                                    <path d="M4.25 13.5C5.07843 13.5 5.75 12.8284 5.75 12C5.75 11.1716 5.07843 10.5 4.25 10.5C3.42157 10.5 2.75 11.1716 2.75 12C2.75 12.8284 3.42157 13.5 4.25 13.5Z"  stroke-miterlimit="10"/>
+                                    <path d="M10.25 12H5.75"  stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.75 12H1.5C1.36739 12 1.24021 11.9473 1.14645 11.8536C1.05268 11.7598 1 11.6326 1 11.5V4.5C1 4.36739 1.05268 4.24021 1.14645 4.14645C1.24021 4.05268 1.36739 4 1.5 4H11V10.7009"  stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11 10.7009V7.5H15V11.5C15 11.6326 14.9473 11.7598 14.8536 11.8536C14.7598 11.9473 14.6326 12 14.5 12H13.25"  stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                доставка и оплата
+                            </button>
+                            <button class="header__containerButtonElement header__decoration light-button light-hover" onclick="document.location.href='request.html'">
+                                <svg class="button-icon"><use href="@img/icons/icons.svg#shoppingBag-icon"></use></svg>
+                                Украшение на заказ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="registration_popup">
+            <div class="popup__content popup__content--registration" data-url="#">
+                <div class="popup__close"><span></span></div>
+                <div class="popup__body MiTab-item active" data-tabbody="phone_registration">
+                        <div class="popup__title">вход или регистрация</div>
+                        <div data-hide-block>
+                            <label for="popup_phone_for_regist">телефон</label>
+                            <input type="tel" class="input-field tel" name="phone" id="popup_phone_for_regist">
+                        </div>
+                        <button type="submit" class="dark-button">Получить код</button>
+                </div>
+                <div class="popup__body MiTab-item" data-tabbody="email_registration">
+                        <div class="popup__title">вход</div>
+                        <div data-hide-block>
+                            <label for="popup_email">электронная почта</label>
+                            <input type="email" class="input-field" name="email" id="popup_email">
+                        </div>
+                        <button type="submit" class="dark-button">Получить код</button>
+                </div>
+                <div class="popup__nav popup__nav--registration">
+                    <div data-tab="email_registration" class="MiTab-narrow">войти по почте</div>
+                    <div data-tab="phone_registration" class="MiTab-narrow active">войти или зарегистрироваться по телефону.</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>

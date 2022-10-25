@@ -1,0 +1,41 @@
+@@include('html/header.html', {
+    "style": '<link rel="stylesheet" href="css/request.min.css">'
+})
+
+    <section id="request-form">
+        <div class="container">
+            <div class="form">
+                <h2>Отправьте заявку<br> на создание вашего уникального украшения</h2>
+                <form action="#">
+                    <label class="input-label" for="name">Имя</label>
+                    <div class="input-wrapper" data-hint="Имя">
+                        <input class="input-field" type="name" id="name">
+                    </div>
+                    <label for="phone" class="input-label">Телефон</label>
+                    <div class="input-wrapper" data-hint="Телефон">
+                        <input type="phone" class="input-field tel" id="phone">
+                    </div>
+                    <label for="email" class="input-label">Email</label>
+                    <div class="input-wrapper" data-hint="email">
+                        <input type="text" id="email" name="email" class="input-field">
+                    </div>
+                    <label for="message" class="input-label">Сообщение (необязательно к заполнению)</label>
+                    <textarea placeholder="Напишите пожелания к дизайну, прикрепите свои эскизы, фото украшения или ссылку на желанную модель." class="input-field textarea-field" name="message" id="message"></textarea>
+                    <div class="input-label margin-custom-1">Загрузите до 5 изображений в формате JPG, PNG или PDF.</div>
+                    <label for="photo" class="pointer file-label">
+                        <input id="photo" name="photo" style="display: none;" type="file" multiple>
+                        <button type="button" class="file-button">
+                            <img src="@img/plusPhoto-icon.svg">
+                            добавить изображения
+                        </button>
+                    </label>
+                    <div class="input-label form__rules">Нажимая на кнопку отправить вы соглашаетесь на <a class="underline" href="#">правила</a> по обработке персональных данных</div>
+                    <button class="form-button form-button-dark" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+@@include('html/footer.html', {
+    "script": ''
+})
